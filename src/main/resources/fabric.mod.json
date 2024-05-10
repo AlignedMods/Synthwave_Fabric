@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "synthwave",
+	"version": "${version}",
+	"name": "Synthwave",
+	"description": "hard mod basically",
+	"authors": [
+		"Aligned"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/synthwave/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.aligned.synthwave.Synthwave"
+		],
+		"client": [
+			"net.aligned.synthwave.SynthwaveClient"
+		],
+		"fabric-datagen": [
+			"net.aligned.synthwave.SynthwaveDataGenerator"
+		]
+	},
+	"mixins": [
+		"synthwave.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
